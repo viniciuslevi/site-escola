@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+p{
+  text-align: justify;
+}
+#interface{
+  width: 1200px;
+  margin: 0px auto 0px auto;
+}
+#cabecalho{
+  top: 100px;
+  height: 200px;
+  border-bottom: 1px solid #606060;
+  background: url("_imagens/imagem.png") no-repeat;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+/* Estilização do menu */
+#menu{
+  display: block;
+}
+#menu ul{
+  list-style: none;
+  position: absolute;
+  top: -20px;
+}
+#menu li{
+  display: inline-block;
+  padding: 5px;
+  margin:10px;
+  background-color: rgba(220, 220, 220, 0.3);
+}
+  a{
+  text-decoration: none;
+  color: #606060;
+}
+hgroup h1{
+  font-family: 'Hanalei', cursive;
+  font-size: 40px;
+  color: green;
+}
+hgroup h2{
+  font-family: 'Roboto', sans-serif;
+  top: 100px;
+}
+
+/*Barra de pesquisa*/
+#pesquisar{
+  display: block;
+  position: absolute;
+  left: 900px;
+  top: 10px;
+}
+#digite{
+  display: inline-block;
+  width: 150px;
+  height: 23px;;
+}
+#clique{
+  top: 10px;
+}
+
+/*Área de cursos*/
+/*
+.cursos{
+display: block;  
+}
+.cursos ul{
+position: relative;
+}
+.cursos li{
+  list-style: none;
+  display: inline-block;
+  background-color: #606060;
+  margin: 10px;
+  vertical-align: middle;    
+}
+*/
+
+.cursos{
+  display: block;
+}
+.cursos p{
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  width: 370px;
+  height: 170px;
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: text-bottom;
+
+  margin: 8px, 0px, 8px, 0px;
+  background-color: rgb(197, 197, 224);
+}
+
+#seg{
+  position: absolute;
+  left: 200px;
+}
