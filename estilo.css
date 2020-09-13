@@ -99,6 +99,9 @@ position: relative;
   position: absolute;
   top: 450px;
 }
+.seguranca h1,p{
+  font-family: 'arial';
+}
 
 #seg{
   position: absolute;
