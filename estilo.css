@@ -95,8 +95,13 @@ position: relative;
   margin: 8px, 0px, 8px, 0px;
   background-color: rgb(197, 197, 224);
 }
+.seguranca{
+  position: absolute;
+  top: 450px;
+}
 
 #seg{
   position: absolute;
-  left: 200px;
+  top:-170px;
+  left: 700px;
 }
