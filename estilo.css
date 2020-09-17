@@ -60,51 +60,102 @@ hgroup h2{
 #clique{
   top: 10px;
 }
-
-/*Área de cursos*/
-/*
-.cursos{
-display: block;  
+/*Cursos*/
+.cursos_main{
+  display: block;
+  text-align: center;
 }
-.cursos ul{
+/*Atributos gerais das div's da @cursos_main*/
+.cursos_main .cursos{
+display: inline-block;
+box-sizing: border-box;
+font-family: 'Quicksand', sans-serif;
+width:370px;
+height: 200px;
 position: relative;
+background-color: #e8e8e882;
+margin: 0px 8px 8px 0px;
+transition: 2s;
 }
-.cursos li{
-  list-style: none;
-  display: inline-block;
-  background-color: #606060;
-  margin: 10px;
-  vertical-align: middle;    
+.cursos_main .cursos p{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
 }
-*/
+
+.cursos_main .cursos_click{
+  position: relative;
+  top: 30px;
+  width: 100px;
+  border:1px solid;
+  transition: 1s;
+}
+/* PARA ADICIONAR ATRIBUTOS ESPECIFICOS PARA CADA DIV 
+Caso necessario o uso de imagens nos fundo, e estilização nos efeitos*/
+
+.cursos:hover{
+  background-color: rgb(204, 204, 204);
+  color: black;
+
+}
+.cursos a:hover{
+  background-color: rgb(204, 204, 204);
+  color: black;
+  font-weight: bold;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Á
+Para cada curso, uma <p> e um botão
+
 
 .cursos{
   display: block;
+  text-align: center;
 }
 .cursos p{
   display: inline-block;
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  width: 370px;
+  font-size: 18px;
+  width: 350px;
   height: 170px;
   position: relative;
-  font-weight: 400;
+  font-weight: 400px;
   text-align: center;
-  vertical-align: text-bottom;
-
+  line-height: 170px;
   margin: 8px, 0px, 8px, 0px;
   background-color: rgb(197, 197, 224);
 }
-.seguranca{
-  position: absolute;
-  top: 450px;
-}
-.seguranca h1,p{
-  font-family: 'arial';
+.cursos #ed_click{
+  display: noe;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  width: 110px;
+  height: 50px;
+  position: relative;
+  font-weight: 400px;
+  text-align: center;
+  line-height: 50px;
+  margin: 8px, 0px, 8px, 0px;
+  background-color: rgb(197, 197, 224);
 }
 
-#seg{
-  position: absolute;
-  top:-170px;
-  left: 700px;
-}
+*/
