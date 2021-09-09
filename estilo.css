@@ -1,5 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --azul: #6495ed;
+  --vermelho: rgb(255, 0, 0); 
+}
+
+/*HEADER*/
+
+.menu{
+  height: 40px;
+  display: flex;
+  flex-direction: row; /* direção: coluna ou linha*/
+  justify-content: center; /* flex-start, center, flex-end,space-around,space-between */
+  align-items:center;
+  padding: 3px;
+  border-radius: 5px;
+}  
+.menu > div{
+  color:black;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: rgb(87, 76, 76);
+  background-color: white;
+  border-radius: 2px;
+}
+.cursos_opt{
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top:10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding-top: 2px;
+  border-radius: 5px;
+}
+.menu:nth-child(n){
+}
+.cursos_opt:nth-child(n) :hover{
+  color: white;
+  background-color:rgb(116, 116, 116);
+  text-align: center;
+  transition: 1s;
+}
+
+.cursos_icons{
+  margin: 10vh;
+  display: grid;
+  grid-column-gap: 8vw;
+  justify-content: center;
+}
+.cursos_icons > .informatica_icone{
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+.cursos_icons > .agropecuaria_icone{
+  grid-column-start: 5; 
+  grid-column-end: 6; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+.cursos_icons > .seguranca_icone{
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 2; 
+  grid-row-end: 3; 
+}
+.cursos_icons > .edificacoes_icone{
+  grid-column-start: 4; 
+  grid-column-end: 5; 
+  grid-row-start: 2; 
+  grid-row-end: 3; 
+}
+.cursos_icons > .nutricao_icone{
+  grid-column-start: 3; 
+  grid-column-end: 4; 
+  grid-row-start: 3; 
+  grid-row-end: 4; 
+}
+
+
 p{
   text-align: justify;
 }
@@ -7,155 +97,6 @@ p{
   width: 1200px;
   margin: 0px auto 0px auto;
 }
-#cabecalho{
-  top: 100px;
-  height: 200px;
-  border-bottom: 1px solid #606060;
-  background: url("_imagens/imagem.png") no-repeat;
-  margin-top: 50px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
-}
-/* Estilização do menu */
-#menu{
-  display: block;
-}
-#menu ul{
-  list-style: none;
-  position: absolute;
-  top: -20px;
-}
-#menu li{
-  display: inline-block;
-  padding: 5px;
-  margin:10px;
-  background-color: rgba(220, 220, 220, 0.3);
-}
-  a{
-  text-decoration: none;
-  color: #606060;
-}
-hgroup h1{
-  font-family: 'Hanalei', cursive;
-  font-size: 40px;
-  color: green;
-}
-hgroup h2{
-  font-family: 'Roboto', sans-serif;
-  top: 100px;
-}
-
-/*Barra de pesquisa*/
-#pesquisar{
-  display: block;
-  position: absolute;
-  left: 900px;
-  top: 10px;
-}
-#digite{
-  display: inline-block;
-  width: 150px;
-  height: 23px;;
-}
-#clique{
-  top: 10px;
-}
-/*Cursos*/
-.cursos_main{
-  display: block;
+.img{
   text-align: center;
 }
-/*Atributos gerais das div's da @cursos_main*/
-.cursos_main .cursos{
-display: inline-block;
-box-sizing: border-box;
-font-family: 'Quicksand', sans-serif;
-width:370px;
-height: 200px;
-position: relative;
-background-color: #e8e8e882;
-margin: 0px 8px 8px 0px;
-transition: 2s;
-}
-.cursos_main .cursos p{
-  text-align: center;
-  margin-top: 50px;
-  font-size: 18px;
-}
-
-.cursos_main .cursos_click{
-  position: relative;
-  top: 30px;
-  width: 100px;
-  border:1px solid;
-  transition: 1s;
-}
-/* PARA ADICIONAR ATRIBUTOS ESPECIFICOS PARA CADA DIV 
-Caso necessario o uso de imagens nos fundo, e estilização nos efeitos*/
-
-.cursos:hover{
-  background-color: rgb(204, 204, 204);
-  color: black;
-
-}
-.cursos a:hover{
-  background-color: rgb(204, 204, 204);
-  color: black;
-  font-weight: bold;
-  padding: 2px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Á
-Para cada curso, uma <p> e um botão
-
-
-.cursos{
-  display: block;
-  text-align: center;
-}
-.cursos p{
-  display: inline-block;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
-  width: 350px;
-  height: 170px;
-  position: relative;
-  font-weight: 400px;
-  text-align: center;
-  line-height: 170px;
-  margin: 8px, 0px, 8px, 0px;
-  background-color: rgb(197, 197, 224);
-}
-.cursos #ed_click{
-  display: noe;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
-  width: 110px;
-  height: 50px;
-  position: relative;
-  font-weight: 400px;
-  text-align: center;
-  line-height: 50px;
-  margin: 8px, 0px, 8px, 0px;
-  background-color: rgb(197, 197, 224);
-}
-
-*/

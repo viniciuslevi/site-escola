@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+/*HEADER*/
+
+.menu{
+  height: 40px;
+  display: flex;
+  flex-direction: row; /* direção: coluna ou linha*/
+  justify-content: center; /* flex-start, center, flex-end,space-around,space-between */
+  align-items:center;
+  padding: 2px;
+  border-radius: 5px;
+}  
+.menu > a{
+  color:black;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: rgb(87, 76, 76);
+  background-color: white;
+  padding: 3px;
+  border-radius: 2px;
+  margin: 2px;
+}
+.cursos_opt{
+  display:none;
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.cursos_opt:nth-child(n) :hover{
+  background-color:rgb(116, 116, 116);
+  text-align: start;
+  transition: 1s;
+}
+
+
+
+
+
+
+p{
+  text-align: justify;
+}
+#interface{
+  width: 1200px;
+  margin: 0px auto 0px auto;
+}
+
+hgroup h1{
+  font-family: 'Hanalei', cursive;
+  font-size: 40px;
+  color: green;
+}
+hgroup h2{
+  font-family: 'Roboto', sans-serif;
+  top: 100px;
+}
+
+/*Barra de pesquisa*/
+#pesquisar{
+  display: block;
+  position: absolute;
+  left: 900px;
+  top: 10px;
+}
+#digite{
+  display: inline-block;
+  width: 150px;
+  height: 23px;;
+}
+#clique{
+  top: 10px;
+}
+
+/*PÁGINA: CURSOS*/
+.cursos p{
+  margin-left: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+.cursos h1{
+  margin-left: 10px;
+}
+.cursos{
+  font-family: cursive;
+  color: black;
+  margin-bottom: 20px;
+  }
+
+  .conteudos{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+ 
+.cursos #seg{
+  background: url(_imagens/seguranca.jpg) no-repeat border-box;
+  background-size: cover;
+}
+.cursos #agr{
+  background: url(_imagens/agropecuaria.jpg) no-repeat;
+  background-size: cover;
+}
+.cursos #inf{
+  background: url(_imagens/informatica.jpg) no-repeat;
+  background-size: cover;
+}
+.cursos #nut{
+  background: url(_imagens/nutricao.jpg);
+  background-size: cover;
+}
+#ed{
+  background-image: url(_imagens/edificacoes.jpg);
+  background-size: cover;
+}

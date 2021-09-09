@@ -1,70 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cetep-SSF</title>
-    
+    <title>Cetep-ssf</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!---->
-    <div id="interface">
-        <header id="cabecalho">
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Início<select</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="conteudos.html">Conteúdos</a></li>
-                    <li><a href="noticias.html">Notícias</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
-                    <li><a href="estagios.html">Estágios</a></li>
-                </ul>
-            </nav>
-            <nav id="pesquisar">
-                <input id="digite" type="text" placeholder="pesquisar" >
-                <button id="clique"><img src="_imagens/lupa.png"></button>
-            </nav>
-        </header>
-
-        <hgroup>
-            <h1>CETEP-SSF</h1>
-        </hgroup>
-
-
-   <div class="cursos_main">
-
-        <div class="cursos" nome="cursos" id="ed")>
-            <p>TECNICO EM EDIFICAÇÕES</p>
-            <a class="cursos_click" id="ed_click" onclick="ed_clicar()" href="cursos.html">Clique aqui</a>
-        </div>
-
-        <div class="cursos" nome="cursos"  id="inf" >
-            <p>TECNICO EM INFORMATICA</p>
-            <a class="cursos_click" id="inf_click" onclick="inf_clicar()" href="cursos.html">Clique aqui</a>
-        </div>
-        
-        <div class="cursos" nome="cursos" id="nut">
-            <p>TECNICO EM NUTRIÇÃO</p>
-            <a class="cursos_click" id="nut_click" onclick="nut_clicar()" href="cursos.html">Clique aqui</a>
-        </div>
-        
-        <div class="cursos" nome="cursos" id="seg">
-        <p> TECNICO EM SEGURANÇA DO TRABALHO</p>
-        <a class="cursos_click" id="seg_click" onclick="seg_clicar()" href="cursos.html">Clique aqui</a>
-        </div>
-
-        <div class="cursos" nome="cursos" id="agr">
-            <p>TECNICO EM AGROPECUARIA</p>
-            <a class="cursos_click" id="agr_click" onclick="agr_clicar()" href="cursos.html">Clique aqui</a>
-        </div>
-
-        </div>
-        
+    <header class="menu">
+        <div><a href="" >Home</a></div>
+        <div><a href="" class="cursos">Cursos <img src="https://img.flaticon.com/icons/png/512/271/271210.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"alt="seta" width="20px" >
+            <section class="cursos_opt">
+                <a href="cursos.html" style="display: block;">Informática</a>
+                <a href="cursos.html" style="display: block;">Edificações</a>
+                <a href="cursos.html" style="display: block;">Segurança do trabalho</a>
+                <a href="cursos.html" style="display: block;">Agropecuária</a>
+                <a href="cursos.html" style="display: block;">Nutrição</a>
+            </section>
+        </a></div>
+        <div><a href="">Conteudos <img src="https://img.flaticon.com/icons/png/512/271/271210.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" alt="seta" width="20px"></a></div>
+        <div><a href="fale-conosco.html">Contatos</a></div>
+        <div><a href="sobre-nos.html">Sobre nós</a></div>
+    </header>
+    <div class="img">
+        <img class="cetepimg" src="./_imagens/imagem.png" alt="cetep">
     </div>
-
-
-    </div>
-<script src="script.js"></script>
+    <section class="cursos_icons">
+        <div class="informatica_icone"><img src="_imagens/informatica_icone.png" alt="informatica"></div>
+        <div class="agropecuaria_icone"><img src="_imagens/agriopecuaria_icone.png" alt="agropecuária"></div>
+        <div class="edificacoes_icone"><img src="_imagens/edificacoes_icone.png" alt="edificacoes"></div>
+        <div class="seguranca_icone"><img src="_imagens/seguranca_icone.png" alt="seguranca"></div>
+        <div class="nutricao_icone"><img src="_imagens/nutricao_icone.png" alt="nutricao"></div>
+    </section>
+    <a href="http://sge.educacao.ba.gov.br/avaliacao/jsp/avaliacao/boletim/consultarBoletimOnLine.jsp">Boletim escolar</a>
+    <script src="script.js"></script>
 </body>
 </html>
