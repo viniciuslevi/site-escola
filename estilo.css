@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+
 body{
   font-family: 'Roboto', sans-serif;
 }
 :root {
   --azul: #6495ed;
   --vermelho: rgb(255, 0, 0); 
+}
+.trst:hover{
+  transition: 2s;
 }
 
 /*HEADER*/
@@ -24,6 +28,10 @@ body{
   background-color: white;
   margin-top: -10px;
 }  
+.menu  a {
+  color: rgb(87, 76, 76);
+}
+.menu:hover{background-color: rgb(230, 230, 230);transition:3s;}
 .menu > div{
   color:black;
   font-weight: bold;
@@ -32,7 +40,6 @@ body{
 }
 a{
   text-decoration: none;
-  color: rgb(87, 76, 76);
   border-radius: 2px;
 }
 .cursos_opt{
@@ -40,13 +47,16 @@ a{
   position: absolute;
   overflow: hidden;
   top:10px;
-  background-color: rgba(0, 0, 0, 0.25);
-  padding-top: 2px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
   border-radius: 5px;
 }
-.cursos_opt:nth-child(n) :hover{
+.cursos_opt:nth-child(n){
   color: white;
-  background-color:rgb(116, 116, 116);
+
+}
+.cursos_opt:nth-child(n) :hover{
+  background-color:rgb(190, 190, 190);
   text-align: center;
   transition: 1s;
 }
@@ -104,23 +114,27 @@ p{
   bottom: 0;
   right: 0;
   width: 20vw;
-  margin-top: -2.5em;
+  margin-bottom: -10px;
+  padding: 5px 5px 0px 5px;
 }
-.left-buttons > div{  
-  margin-bottom: 20px;
-  background-color: rgba(168, 168, 168, 0.253);
+.left-buttons > div{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color:rgba(0, 0, 0, 0.103);
   border-radius: 5px;
   padding: 2px;
 }
 .botao{
   display:block;
-  justify-content: center;
   margin: 5px;
   width: max-content;  
   background-color: rgba(252, 0, 0, 0.75);
   padding: 5px;
   color: white;
-  border-radius:5px
+  border-radius:5px;
+  
 }
 .botao:hover{
   background-color:black;
